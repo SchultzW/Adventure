@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Engine;
+
 
 namespace Adventure
 {
-    public partial class Form1 : Form
+    public partial class Adventure : Form
     {
-        public Form1()
+        public Adventure()
         {
             InitializeComponent();
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
