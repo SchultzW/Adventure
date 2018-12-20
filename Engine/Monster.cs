@@ -6,35 +6,38 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    class Monster : Character
+    public class Monster : Character
     {
         private int id;
         private string name;
         private int maxDmg;
         private int rewardEXP;
         private int rewardGold;
-        private List<LootItem> LootTable { get; set; }
+
         public int ID
         {
             get; set;
         }
         public string Name
         {
-            get;set;
+            get; set;
         }
         public int MaxDMG
         {
-            get;set;
+            get; set;
         }
         public int RewardEXP
         {
-            get;set;
+            get; set;
         }
         public int RewardGold
         {
-            get;set;
+            get; set;
         }
-        public Monster(int id,string name,int currentHP,int maxHP, int maxDmg,int rewardExp,int rewardGold):base(currentHp,maxHP)
+        public List<LootItem> LootTable { get; set; }
+
+
+        public Monster(int id, string name, int currentHP, int maxHP, int maxDmg, int rewardExp, int rewardGold) : base(currentHP, maxHP)
         {
             this.ID = id;
             this.Name = name;
@@ -43,7 +46,7 @@ namespace Engine
             this.RewardGold = rewardGold;
             LootTable = new List<LootItem>();
         }
-            
-        
+
+
     }
 }

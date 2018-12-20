@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    class LootItem
+    public class LootItem
     {
         private Items details;
         private int dropPercent;

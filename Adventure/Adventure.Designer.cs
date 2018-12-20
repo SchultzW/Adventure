@@ -36,6 +36,11 @@
             this.lblExp = new System.Windows.Forms.Label();
             this.lblLevel = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cboWeapons = new System.Windows.Forms.ComboBox();
+            this.cboPotions = new System.Windows.Forms.ComboBox();
+            this.btnUseWeapon = new System.Windows.Forms.Button();
+            this.btnUsePotion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -111,11 +116,59 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Hit Points:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(617, 531);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Select Action";
+            // 
+            // cboWeapons
+            // 
+            this.cboWeapons.FormattingEnabled = true;
+            this.cboWeapons.Location = new System.Drawing.Point(369, 559);
+            this.cboWeapons.Name = "cboWeapons";
+            this.cboWeapons.Size = new System.Drawing.Size(121, 21);
+            this.cboWeapons.TabIndex = 9;
+            // 
+            // cboPotions
+            // 
+            this.cboPotions.FormattingEnabled = true;
+            this.cboPotions.Location = new System.Drawing.Point(369, 593);
+            this.cboPotions.Name = "cboPotions";
+            this.cboPotions.Size = new System.Drawing.Size(121, 21);
+            this.cboPotions.TabIndex = 10;
+            // 
+            // btnUseWeapon
+            // 
+            this.btnUseWeapon.Location = new System.Drawing.Point(620, 559);
+            this.btnUseWeapon.Name = "btnUseWeapon";
+            this.btnUseWeapon.Size = new System.Drawing.Size(75, 23);
+            this.btnUseWeapon.TabIndex = 11;
+            this.btnUseWeapon.Text = "Use";
+            this.btnUseWeapon.UseVisualStyleBackColor = true;
+            // 
+            // btnUsePotion
+            // 
+            this.btnUsePotion.Location = new System.Drawing.Point(620, 593);
+            this.btnUsePotion.Name = "btnUsePotion";
+            this.btnUsePotion.Size = new System.Drawing.Size(75, 23);
+            this.btnUsePotion.TabIndex = 12;
+            this.btnUsePotion.Text = "Use";
+            this.btnUsePotion.UseVisualStyleBackColor = true;
+            // 
             // Adventure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(719, 651);
+            this.Controls.Add(this.btnUsePotion);
+            this.Controls.Add(this.btnUseWeapon);
+            this.Controls.Add(this.cboPotions);
+            this.Controls.Add(this.cboWeapons);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblLevel);
             this.Controls.Add(this.lblExp);
@@ -141,6 +194,11 @@
         private System.Windows.Forms.Label lblExp;
         private System.Windows.Forms.Label lblLevel;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cboWeapons;
+        private System.Windows.Forms.ComboBox cboPotions;
+        private System.Windows.Forms.Button btnUseWeapon;
+        private System.Windows.Forms.Button btnUsePotion;
     }
 }
 

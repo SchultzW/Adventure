@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    class Location
+    public class Location
     {
         #region properties and setters/getters
         private int id;
@@ -29,12 +29,12 @@ namespace Engine
             set;
         }
         public Items ItemRequired { get; set; }
-        public Quest QuestAvailable { get; set; }
+        public Quest QuestAvailableHere { get; set; }
         public Monster MonsterLivingHere { get; set; }
-        public Location LocalNorth { get; set; }
-        public Location LocalEast { get; set; }
-        public Location LocalSouth { get; set; }
-        public Location LocalWest { get; set; }
+        public Location LocationToNorth { get; set; }
+        public Location LocationToEast { get; set; }
+        public Location LocationToSouth { get; set; }
+        public Location LocationToWest { get; set; }
         #endregion
 
         public Location(int id,string name,string desciption, Items itemRequired=null,Quest questAvailable=null,Monster monsterLivinghere=null)
@@ -43,7 +43,7 @@ namespace Engine
             this.Name = name;
             this.Description = desciption;
             this.ItemRequired = itemRequired;
-            this.QuestAvailable = questAvailable;
+            this.QuestAvailableHere = questAvailable;
             this.MonsterLivingHere = monsterLivinghere;
         }
         
