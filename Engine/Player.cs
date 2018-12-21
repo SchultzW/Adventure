@@ -15,7 +15,9 @@ namespace Engine
         private int level;
         private List<Inventory> inventories;
         private List<PlayerQuest> quests;
+        private Location currentLocation;
 
+        public Location CurrentLocation { get; set; }
         public List<Inventory> Inventories { get; set; }
         public List<PlayerQuest> Quests { get; set; }
         public int Gold
